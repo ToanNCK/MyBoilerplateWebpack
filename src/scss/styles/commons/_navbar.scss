@@ -1,0 +1,55 @@
+//
+// Component: Navbar
+//
+
+.navbar {
+  .navbar-nav {
+    height: 52px;
+    & > .user-menu {
+      .user-image {
+        height: 48px;
+        width: 48px;
+      }
+    }
+
+    .is-navbar {
+      height: 40px !important;
+      width: 40px;
+      padding: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid var(--white);
+      box-sizing: border-box;
+      border-radius: 50px;
+    }
+
+    .nav-item {
+      margin-left: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .dn-icons {
+      min-width: 24px;
+      min-height: 24px;
+    }
+
+    #notification {
+      .dropdown-toggle::after {
+        border: 0;
+      }
+
+      .dn-icon-notification {
+        margin-left: 3.5px;
+      }
+    }
+
+    #file-add {
+      @extend #notification;
+    }
+  }
+}
+
+//

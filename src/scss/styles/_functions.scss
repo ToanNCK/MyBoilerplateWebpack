@@ -1,0 +1,4 @@
+@function background-variant($color, $per: 0.3) {
+    $bg: rgba($color, $per);
+    @return $bg;
+}

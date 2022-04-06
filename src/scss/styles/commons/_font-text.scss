@@ -1,0 +1,17 @@
+//
+// Component: Font
+//
+
+@for $i from 11 through 24 {
+  .font-s-#{$i} {
+    font-size: #{$i}px !important;
+  }
+}
+
+.text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+//

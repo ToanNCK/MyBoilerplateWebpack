@@ -1,0 +1,72 @@
+//
+// Component: Width Height
+//
+
+@each $unit in $lst-unit {
+  $c-unit: -#{$unit};
+  @if ($unit==$unit-default) {
+    $c-unit: "";
+  }
+
+  @for $i from 1 through 100 {
+    .w-#{$i + $c-unit} {
+      width: $i + $unit !important;
+    }
+
+    .min-w-#{$i + $c-unit} {
+      min-width: $i + $unit !important;
+    }
+
+    .max-w-#{$i + $c-unit} {
+      max-width: $i + $unit !important;
+    }
+
+    .h-#{$i + $c-unit} {
+      height: $i + $unit !important;
+    }
+
+    .min-h-#{$i + $c-unit} {
+      min-height: $i + $unit !important;
+    }
+
+    .max-h-#{$i + $c-unit} {
+      max-height: $i + $unit !important;
+    }
+  }
+
+  @each $name, $width in $lst-width {
+    .w-#{$name + $c-unit} {
+      width: $width + $unit !important;
+    }
+    .min-w-#{$name + $c-unit} {
+      min-width: $width + $unit !important;
+    }
+    .max-w-#{$name + $c-unit} {
+      max-width: $width + $unit !important;
+    }
+  }
+
+  @each $name, $height in $lst-height {
+    .h-#{$name + $c-unit} {
+      height: $height + $unit !important;
+    }
+    .min-h-#{$name + $c-unit} {
+      min-height: $height + $unit !important;
+    }
+    .max-h-#{$name + $c-unit} {
+      max-height: $height + $unit !important;
+    }
+  }
+}
+
+@for $i from 1 through 100 {
+  .w-#{$i}-per {
+    width: #{$i + "%"} !important;
+  }
+
+  .h-#{$i}-per {
+    height: #{$i + "%"} !important;
+  }
+}
+
+//

@@ -1,0 +1,79 @@
+//
+// Component: Positions
+//
+
+$lst-unit-p: append($lst-unit, "%");
+@each $unit in $lst-unit-p {
+  $c-unit: -#{$unit};
+  @if ($unit == $unit-default) {
+    $c-unit: "";
+  }
+
+  @if ($unit == "%") {
+    $c-unit: -per;
+  }
+
+  @for $i from 1 through 100 {
+    .pt-#{$i + $c-unit} {
+      padding-top: #{$i + $unit} !important;
+    }
+
+    .pr-#{$i + $c-unit} {
+      padding-right: #{$i + $unit} !important;
+    }
+
+    .pb-#{$i + $c-unit} {
+      padding-bottom: #{$i + $unit} !important;
+    }
+
+    .pl-#{$i + $c-unit} {
+      padding-left: #{$i + $unit} !important;
+    }
+
+    .minus-pt-#{$i + $c-unit} {
+      padding-top: -#{$i + $unit} !important;
+    }
+
+    .minus-pr-#{$i + $c-unit} {
+      padding-right: -#{$i + $unit} !important;
+    }
+
+    .minus-pb-#{$i + $c-unit} {
+      padding-bottom: -#{$i + $unit} !important;
+    }
+
+    .minus-pl-#{$i + $c-unit} {
+      padding-left: -#{$i + $unit} !important;
+    }
+
+    .p-#{$i + $c-unit} {
+      padding: #{$i + $unit} !important;
+    }
+
+    .minus-p-#{$i + $c-unit} {
+      padding: -#{$i + $unit} !important;
+    }
+  }
+}
+
+.pt-unset {
+  padding-top: unset !important;
+}
+
+.pr-unset {
+  padding-right: unset !important;
+}
+
+.pb-unset {
+  padding-bottom: unset !important;
+}
+
+.pl-unset {
+  padding-left: unset !important;
+}
+
+.p-unset {
+  padding: unset !important;
+}
+
+//

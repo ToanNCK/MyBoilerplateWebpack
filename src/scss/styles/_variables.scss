@@ -1,0 +1,104 @@
+﻿$project: "dn";
+$dark-blue: #1b4e91 !default;
+$red: #ef6265 !default;
+$secondary-lightest: #e8e8e8 !default;
+$secondary-light: #b1b1b1 !default;
+$yellow-400: #fee280 !default;
+$yellow-100: #fff6d9 !default;
+$dark-light: #e8f4fb !default;
+$dark-red: #ed1b24 !default;
+$cyan-100: #daeff2 !default;
+$primary: #50b748 !default;
+$primary-hover: rgba(80, 183, 72, 0.6) !default;
+$primary-lightest: #cce7f6 !default;
+$default: #e7e9ee !default;
+$light: #f2f6fc !default;
+$gray-eee: #e5e5e5 !default;
+$gray-light: #999 !default;
+$gray-light-2: #ccc !default;
+$corlor-body: #454545 !default;
+$corlor-body-title-text: #3f3f3f !default;
+$bg-body: #e5e5e5 !default;
+// font
+$font-default: "Roboto", sans-serif !default;
+$font-size: 10 !default;
+// design system
+$primary: #2e89f3 !default;
+$series-c: #78d237 !default;
+//
+$colors: ();
+$colors: map-merge(
+  (
+    "red": $red,
+    "secondary-lightest": $secondary-lightest,
+    "secondary-light": $secondary-light,
+    "yellow-400": $yellow-400,
+    "yellow-100": $yellow-100,
+    "dark-light": $dark-light,
+    "dark-red": $dark-red,
+    "dark-blue": $dark-blue,
+    "cyan-100": $cyan-100,
+    "primary": $primary,
+    "primary-hover": $primary-hover,
+    "primary-lightest": $primary-lightest,
+    "light": $light,
+    "gray-eee": $gray-eee,
+    "gray-light": $gray-light,
+    "gray-light-2": $gray-light-2,
+    "corlor-body": $corlor-body,
+    "corlor-body-title-text": $corlor-body-title-text,
+    "series-c": $series-c,
+  ),
+  $colors
+);
+$backgrounds: ();
+$backgrounds: map-merge(
+  (
+    "bg-body": $bg-body,
+  ),
+  $backgrounds
+);
+$unit-default: px !default;
+$lst-unit: (px, rem, em) !default;
+$lst-width: () !default;
+$lst-width: map-merge(
+  (
+    "120": 120,
+    "140": 140,
+    "160": 160,
+    "200": 200,
+    "240": 240,
+    "250": 250,
+    "300": 300,
+    "350": 350,
+    "1366": 1366,
+  ),
+  $lst-width
+);
+
+$lst-height: () !default;
+$lst-height: map-merge(
+  (
+    "240": 240,
+    "250": 250,
+  ),
+  $lst-height
+);
+
+$icons: () !default;
+$icons: map-merge((), $icons);
+
+$icons-hover: () !default;
+$icons-hover: map-merge((), $icons-hover);
+
+$lst-cls-js: (
+  "js-toggle-cta",
+  "js-expanded-toggle",
+  "TotalRecord",
+  "drdPageSize",
+  "onChangePageSize",
+  "onSetPageIndex",
+  "page-heading",
+  "jsHeightDoc",
+  "js-borrow"
+) !default;

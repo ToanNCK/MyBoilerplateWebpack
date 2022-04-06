@@ -1,0 +1,71 @@
+//
+// Component: Positions
+//
+
+$lst-unit-p: append($lst-unit, "%");
+@each $unit in $lst-unit-p {
+  $c-unit: -#{$unit};
+  @if ($unit == $unit-default) {
+    $c-unit: "";
+  }
+
+  @if ($unit == "%") {
+    $c-unit: -per;
+  }
+
+  @for $i from 0 through 100 {
+    .t-#{$i + $c-unit} {
+      top: #{$i + $unit};
+    }
+
+    .r-#{$i + $c-unit} {
+      right: #{$i + $unit};
+    }
+
+    .b-#{$i + $c-unit} {
+      bottom: #{$i + $unit};
+    }
+
+    .l-#{$i + $c-unit} {
+      left: #{$i + $unit};
+    }
+
+    .minus-t-#{$i + $c-unit} {
+      top: -#{$i + $unit};
+    }
+
+    .minus-r-#{$i + $c-unit} {
+      right: -#{$i + $unit};
+    }
+
+    .minus-b-#{$i + $c-unit} {
+      bottom: -#{$i + $unit};
+    }
+
+    .minus-l-#{$i + $c-unit} {
+      left: -#{$i + $unit};
+    }
+  }
+}
+
+.t-unset {
+  top: unset;
+}
+
+.r-unset {
+  right: unset;
+}
+
+.b-unset {
+  bottom: unset;
+}
+
+.l-unset {
+  left: unset;
+}
+
+.vertical-middle {
+  vertical-align: middle !important;
+}
+
+//

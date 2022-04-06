@@ -1,0 +1,33 @@
+//
+// Component: Scroll
+//
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  &:hover {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+*:hover::-webkit-scrollbar-corner {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0.5px var(--eden-gray-light) !important;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--eden-gray-light-2);
+  border-radius: 10px;
+  &:hover {
+    background: var(--eden-gray-light);
+    transition: background-color 0.2s linear;
+  }
+}
+
+//

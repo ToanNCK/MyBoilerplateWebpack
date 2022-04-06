@@ -1,0 +1,8 @@
+﻿:root {
+  @each $color, $value in $colors {
+    --eden-#{$color}: #{$value};
+  }
+  --primary: #{$primary};
+  --eden-font-default: #{$font-default};
+  font-size: #{$font-size}px;
+}

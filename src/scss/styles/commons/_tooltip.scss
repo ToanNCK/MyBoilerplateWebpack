@@ -1,0 +1,30 @@
+//
+// Component: Tooltip
+//
+
+.tooltip {
+  .tooltip-inner {
+    -webkit-border-radius: 4px;
+    -webkit-background-clip: padding-box;
+    -moz-border-radius: 4px;
+    -moz-background-clip: padding;
+    border-radius: 4px;
+    background-clip: padding-box;
+    transition: visibility 0, opacity 0.13s ease-in;
+    background-color: #435b65;
+    border: 1px solid #435b65;
+    color: var(--white);
+    padding: 5px 12px;
+    font-size: 12px;
+    font-family: var(--eden-font-default);
+    line-height: 150%;
+  }
+
+  .arrow {
+    &::before {
+      border-top-color: #435b65;
+    }
+  }
+}
+
+//

@@ -1,0 +1,79 @@
+﻿//
+// Component: Shared
+//
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: $font-default;
+  font-size: 1.4rem;
+  color: $corlor-body;
+  background-color: $bg-body;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+a[href^="http"]:empty::before {
+  content: attr(href);
+}
+
+a[href]:not([class]) {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+img {
+  display: block;
+  font-family: sans-serif;
+  font-weight: 300;
+  height: auto;
+  line-height: 2;
+  position: relative;
+  text-align: center;
+  width: 100%;
+
+  &::before {
+    content: "We're sorry, the image below is broken :(";
+    display: block;
+    margin-bottom: 10rem;
+  }
+
+  &::after {
+    content: "(url: " attr(src) ")";
+    display: block;
+    font-size: 12px;
+  }
+}
+
+br + br {
+  display: none;
+}
+
+@each $cls-js in $lst-cls-js {
+  .#{$cls-js} {
+    font-size: 1rem;
+  }
+}
+
+.no-box-shadow{
+  box-shadow: none !important;
+}
+
+.star-#{$project}:after {
+  content: "*";
+  color: var(--danger);
+  font-family: var(--eden-font-default);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+  margin-left: 5px;
+}
+
+//

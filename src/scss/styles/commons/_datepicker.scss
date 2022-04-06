@@ -1,0 +1,53 @@
+//
+// Component: Datepicker
+//
+
+.bootstrap-datetimepicker-widget {
+  &.dropdown-menu{
+      z-index: 6000;
+  }
+  table {
+    td {
+      &.active {
+        background-color: var(--primary);
+        &:hover {
+          background-color: var(--primary);
+        }
+      }
+    }
+  }
+
+  &.dropdown-menu {
+    &.top {
+      &:before {
+        bottom: -5px;
+        border-top: 0;
+      }
+
+      &:after {
+        bottom: -5px;
+        border-top: 6px;
+      }
+    }
+
+    &.bottom {
+      &:before {
+        top: -15px;
+      }
+
+      &:after {
+        top: -13px;
+      }
+    }
+
+    &::before {
+      top: auto;
+    }
+
+    &::after {
+      top: auto;
+    }
+  }
+}
+
+//
