@@ -1,6 +1,6 @@
-import '../plugins/bootstrap/css/bootstrap.min.css';
+// import '../plugins/bootstrap/css/bootstrap.min.css';
 /* Your CSS Code goes here */
-import '../scss/app.scss';
+import "../scss/app.scss";
 
 /* Your JS Code goes here */
-import './main.js';
+import "./main.js";
