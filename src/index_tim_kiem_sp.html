@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Eden Group" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Sansi Don Hang</title>
+  </head>
+
+  <body data-active_menu="<%= var_active_menu %>">
+    <div class="wrapper">
+      <%= require('html-loader!./component/shared/header.html').default %> <%=
+      require('html-loader!./component/tim_kiem_sp.html').default %> <%=
+      require('html-loader!./component/shared/footer.html').default %>
+    </div>
+  </body>
+  <script src="./plugins/jquery.min.js"></script>
+  <!-- <script src="./plugins/bootstrap/js/bootstrap.min.js"></script> -->
+</html>

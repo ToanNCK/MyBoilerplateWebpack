@@ -371,7 +371,7 @@ nav ul li a {
 .quyTrinh p {
   margin-top: 2rem;
 }
-.hinde {
+.hide {
   display: none;
 }
 .active p {
@@ -461,7 +461,8 @@ nav ul li a {
   background-size: 60%;
   display: inline-block;
   border-radius: 50%;
-  border-color: #c61c1d;
+  padding: 1.5rem;
+  border-color: #fa282e;
   width: 2rem;
   height: 2rem;
 }
@@ -473,7 +474,7 @@ nav ul li a {
 }
 .seach-input input {
   width: 60%;
-  height: 2rem;
+  height: 3rem;
   border: 0.1rem solid #c61c1d;
   border-radius: 0.2rem;
   margin-right: 1rem;
@@ -497,6 +498,7 @@ nav ul li a {
   color: #ffffff;
   margin: 0 1rem;
   border-radius: 0.4rem;
+  border: none;
 }
 .seach-bt img {
   padding: 0 1rem;
@@ -823,7 +825,7 @@ nav ul li a {
     text-align: justify;
   }
   .baner img {
-    width: auto;
+    object-fit: cover;
     height: 43rem;
   }
   .content-baner {
@@ -845,7 +847,7 @@ nav ul li a {
   }
   .bt-preview {
     left: 1rem;
-    top: calc(50% - 303rem);
+    top: calc(50% - 3rem);
   }
   .quyTrinh i {
     width: 5rem;
@@ -968,6 +970,76 @@ nav ul li a {
   .footer-content > div {
     width: 50%;
   }
+
+  // Footer
+  .footer {
+    .footer-content {
+      .footer-title {
+        padding-right: 10px;
+        i {
+          width: 22px;
+          height: 31px;
+          margin-right: 5px;
+        }
+        h4 {
+          font-size: 1.4rem;
+        }
+      }
+      p {
+        font-size: 1.2rem;
+        padding: 10px 20px 10px 0;
+        text-align: justify;
+      }
+      ul {
+        padding-bottom: 1rem;
+        list-style-position: inside;
+        li {
+          padding: 0.1rem;
+
+          a {
+            font-size: 1.2rem;
+          }
+        }
+      }
+      ol {
+        font-size: 1.2rem;
+        list-style-position: inside;
+      }
+    }
+    .address {
+      display: block;
+      .address-content {
+        width: 100%;
+        padding-bottom: 1rem;
+        h4 {
+          font-size: 1.4rem;
+          text-align: center;
+        }
+        p {
+          font-size: 1.2rem;
+        }
+      }
+      .address-sub {
+        width: 100%;
+        h4 {
+          font-size: 1.4rem;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .footer-sub {
+    display: block;
+    padding: 1.5rem;
+    height: 15rem;
+    .footer-sub-content {
+      font-size: 1.2rem;
+    }
+    div:nth-child(2) {
+      text-align: center;
+      padding-top: 1.5rem;
+    }
+  }
 }
 .seach-bt .i1 {
   display: inline-block;
@@ -997,6 +1069,1521 @@ nav ul li a {
   margin-left: 2rem;
 }
 a[href]:not([class]) {
-  color: white;
+  // color: white;
   text-decoration: none;
+}
+// from dang ky
+.form-dk {
+  position: fixed;
+  top: 10vw;
+  left: 30%;
+  padding: 0;
+  margin: 0;
+  width: 40%;
+  background-color: white;
+  font-family: "Roboto";
+  font-style: normal;
+  border-radius: 0.5rem;
+  z-index: 1;
+}
+.form-dk span {
+  color: red;
+}
+.form-title {
+  width: 100%;
+  height: 6rem;
+  background-color: #343e48;
+  font-size: 170%;
+  // border-radius: 1.5rem 1.5rem 0 0;
+  color: white;
+}
+.form-title {
+  ul {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    li {
+      height: 100%;
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+.form-name {
+  text-align: center;
+  font-size: 200%;
+  padding: 2%;
+}
+.form-dky {
+  padding: 0 10%;
+}
+.form-dky > div {
+  text-align: right;
+  width: 100%;
+  padding: 2%;
+}
+.form-dky > div > label {
+  width: 30%;
+  padding-right: 2%;
+}
+.form-dky > div > input {
+  width: 70%;
+  height: 3.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(52, 62, 72, 0.8);
+}
+.chexbox {
+  text-align: center;
+}
+.form-bt {
+  margin: 2% 0;
+  height: 2%;
+  text-align: center;
+}
+.form-bt > button {
+  width: 20%;
+  height: 4rem;
+  margin: 0 5%;
+}
+.form-bt #bt-dk,
+.form-bt #bt-dn {
+  background-color: #c61c1d;
+  color: white;
+  border-radius: 0.5rem;
+  border: none;
+}
+.form-bt #bt-huy {
+  border-radius: 0.5rem;
+}
+
+.form-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+
+.form-active {
+  background-color: white;
+  color: black;
+}
+
+.login-sub {
+  display: flex;
+  justify-content: center;
+  > div {
+    padding: 0 10%;
+    a {
+      color: #000000;
+    }
+  }
+}
+
+// hieu ung
+@keyframes hienthi {
+  0% {
+    display: none;
+    top: -20vw;
+  }
+  100% {
+    top: 10vw;
+  }
+}
+@keyframes hide {
+  0% {
+    top: 10vw;
+  }
+  100% {
+    top: -20vw;
+  }
+}
+.show {
+  animation-name: hienthi;
+  animation-duration: 0.7s;
+}
+.form-hide {
+  animation-name: hide;
+  animation-duration: 0.5s;
+}
+
+// Tìm kiếm sản phẩm
+.tim-kiem-sp {
+  .don-hang-nav {
+    width: 100%;
+    height: 15rem;
+    .tim-kiem-sp-nav-top {
+      display: flex;
+      height: 12rem;
+      background-color: #343e48;
+      padding: 0 5%;
+      .selection {
+        background-color: #c61c1d;
+        color: #ffffff;
+      }
+      > div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: calc(100% / 7);
+        height: 100%;
+        .tao-don-hang {
+          display: block;
+          background-image: url(../images/content/tim-kiem-sp/tao-don-hang.svg);
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          height: 5rem;
+          width: 5rem;
+          margin: auto;
+        }
+        .don-hang {
+          display: block;
+          background-image: url(../images/content/tim-kiem-sp/don-hang.svg);
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          height: 5rem;
+          width: 5rem;
+          margin: auto;
+        }
+        .kien-hang {
+          display: block;
+          background-image: url(../images/content/tim-kiem-sp/kien-hang.svg);
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          height: 5rem;
+          width: 5rem;
+          margin: auto;
+        }
+        .vi-dien-tu {
+          display: block;
+          background-image: url(../images/content/tim-kiem-sp/vi-dien-tu.svg);
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          height: 5rem;
+          width: 5rem;
+          margin: auto;
+        }
+        .khieu-lai {
+          display: block;
+          background-image: url(../images/content/tim-kiem-sp/khieu-lai.svg);
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          height: 5rem;
+          width: 5rem;
+          margin: auto;
+        }
+        .nha-cung-cap {
+          display: block;
+          background-image: url(../images/content/tim-kiem-sp/nha-cung-cap.svg);
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          height: 5rem;
+          width: 5rem;
+          margin: auto;
+        }
+        .cai-dat {
+          display: block;
+          background-image: url(../images/content/tim-kiem-sp/cai-dat.svg);
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          height: 5rem;
+          width: 5rem;
+          margin: auto;
+        }
+
+        a {
+          color: #ffffff;
+          font-family: "Roboto";
+          font-style: normal;
+          font-size: 130%;
+        }
+        p {
+          padding-top: 2rem;
+        }
+      }
+    }
+    .tim-kiem-sp-nav-bottom {
+      width: 100%;
+      height: 3rem;
+      background-color: #516170;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 5%;
+      position: relative;
+      .tao-don-hang-sub-left {
+        line-height: 3rem;
+        width: calc(100% / 7);
+        text-align: center;
+      }
+      .tao-don-hang-sub-right {
+        display: flex;
+        align-items: center;
+        .so-du {
+          width: 18rem;
+          height: 2rem;
+          background-color: #ffffff;
+          color: #000000;
+          border-radius: 0.2rem;
+          padding-left: 1rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-right: 3rem;
+          i {
+            display: inline-block;
+            background-image: url(../images/content/tim-kiem-sp/tien.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-left: 1rem;
+            width: 3rem;
+            height: 2rem;
+          }
+        }
+        .sub-mail {
+          background-image: url(../images/content/tim-kiem-sp/email.svg);
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center;
+          width: 2rem;
+          height: 2rem;
+          margin-right: 3rem;
+          position: relative;
+          span {
+            position: absolute;
+            width: 1.5rem;
+            height: 1.5rem;
+            border-radius: 50%;
+            color: #ffffff;
+            background-color: #c61c1d;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            // padding: 0.5rem;
+            font-size: 1rem;
+            top: -0.5rem;
+            right: -1.2rem;
+          }
+        }
+        .sub-cua-hang {
+          background-image: url(../images/content/tim-kiem-sp/cua-hang.svg);
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center;
+          width: 2rem;
+          height: 2rem;
+          margin-right: 3rem;
+          position: relative;
+          span {
+            position: absolute;
+            width: 1.5rem;
+            height: 1.5rem;
+            border-radius: 50%;
+            color: #ffffff;
+            background-color: #c61c1d;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            // padding: 0.5rem;
+            font-size: 1rem;
+            top: -0.5rem;
+            right: -1.2rem;
+          }
+        }
+        .sub-thong-bao {
+          background-image: url(../images/content/tim-kiem-sp/thong-bao.svg);
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center;
+          width: 2rem;
+          height: 2rem;
+          margin-right: 3rem;
+          position: relative;
+          span {
+            position: absolute;
+            width: 1.5rem;
+            height: 1.5rem;
+            border-radius: 50%;
+            color: #ffffff;
+            background-color: #c61c1d;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            // padding: 0.5rem;
+            font-size: 1rem;
+            top: -0.5rem;
+            right: -1rem;
+          }
+        }
+        .avata {
+          background-image: url(../images/content/tim-kiem-sp/avata.svg);
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center;
+          width: 2rem;
+          height: 2rem;
+        }
+      }
+    }
+  }
+  .don-hang-title {
+  }
+  .tim-kiem-sp-content {
+    table {
+      width: 100%;
+      border-spacing: 0;
+      padding: 0 5%;
+      th {
+        background-color: #343e48;
+        color: #ffffff;
+        border: 1px solid rgba($color: #343e48, $alpha: 0.8);
+        height: 5rem;
+      }
+      td {
+        border: 1px solid rgba($color: #343e48, $alpha: 0.8);
+        margin: auto;
+        text-align: center;
+        input {
+          width: 90%;
+          display: flex;
+          flex-direction: column;
+          height: 3rem;
+          margin: 1rem auto;
+        }
+        .sub {
+          display: flex;
+          margin: 1rem auto;
+          justify-content: center;
+          .upload {
+            background-color: #343e48;
+            color: #ffffff;
+            width: 5rem;
+            text-align: center;
+            border-radius: 0.3rem;
+            margin-right: 0.5rem;
+          }
+          .link {
+            background-color: #c61c1d;
+            color: #ffffff;
+            width: 5rem;
+            text-align: center;
+            border-radius: 0.3rem;
+            margin-left: 0.5rem;
+          }
+        }
+        img {
+          width: 11rem;
+          height: auto;
+          margin: 1rem auto;
+        }
+        .so-luong {
+          display: flex;
+          width: 16rem;
+          height: 3rem;
+          align-items: center;
+          margin: auto;
+          border: 1px solid #343e48;
+          button {
+            border-radius: 0;
+            height: 3rem;
+            width: 3rem;
+            border: 1px;
+            background-color: #c61c1d;
+            color: #ffffff;
+            font-size: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
+          p {
+            border: none;
+            width: 10rem;
+          }
+        }
+        p {
+          width: 90%;
+          margin: auto;
+          height: 3rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+      .cow1 {
+        width: 2%;
+      }
+      .cow2 {
+        width: 5%;
+      }
+      .cow3 {
+        width: 10%;
+      }
+      .cow4 {
+        width: 7%;
+      }
+      .cow5 {
+        width: 5%;
+      }
+      .cow6 {
+        width: 10%;
+      }
+      .cow7 {
+        width: 7%;
+      }
+
+      span {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        background-color: #c61c1d;
+        color: #ffffff;
+        margin: 2rem auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+      }
+      p {
+        width: 10rem;
+        height: 3rem;
+        border: 1px solid #343e48;
+      }
+    }
+    button {
+      width: 15rem;
+      height: 4rem;
+      display: block;
+      text-align: center;
+      background-color: #c61c1d;
+      border-color: #c61c1d;
+      border-radius: 0.3rem;
+      color: #ffffff;
+      margin: 1.5rem auto;
+    }
+  }
+  .tim-kiem-sp-total {
+    width: 90%;
+    margin: auto;
+    .total-content {
+      display: flex;
+      justify-content: space-between;
+      > div {
+        width: 24%;
+        border: 1px solid #343e48;
+        .total-titel {
+          background-color: #343e48;
+          color: #ffffff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          justify-content: center;
+
+          height: 4rem;
+        }
+        .total-content {
+          display: block;
+          width: 100%;
+          height: 16rem;
+          padding-top: 1.5rem;
+          line-height: 2.5rem;
+          padding-left: 2rem;
+          // font-size: 2rem;
+        }
+        .total {
+          display: flex;
+          width: 100%;
+          border: none;
+          .total-title {
+            width: 85%;
+            border: none;
+            // padding-left: 2rem;
+          }
+          .total-value {
+            width: 15%;
+            border: none;
+          }
+        }
+      }
+    }
+    #bt-dat-hang {
+      width: 15rem;
+      height: 4rem;
+      display: block;
+      text-align: center;
+      background-color: #c61c1d;
+      border-color: #c61c1d;
+      border-radius: 0.3rem;
+      color: #ffffff;
+      margin: 1.5rem auto;
+    }
+  }
+}
+
+// Thông tin thêm
+.thong-tin-them {
+  text-align: justify;
+  a {
+    color: #000000;
+  }
+  .sub-thong-tin {
+    background-color: #343e48;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    height: 4rem;
+    width: 100%;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    ul {
+      padding: 0 5%;
+      list-style: none;
+      display: flex;
+      vertical-align: middle;
+      li {
+        padding-right: 1rem;
+      }
+      .next {
+        width: 1rem;
+        height: 1rem;
+        display: inline-block;
+        background-image: url(../images/content/thong-tin-them/next.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+      }
+    }
+  }
+  .thong-tin-them-content {
+    margin: 3rem auto;
+    width: 90%;
+
+    .container-thong-tin-1 {
+      display: flex;
+      justify-content: space-between;
+      .thong-tin-left {
+        width: 70%;
+        text-align: justify;
+        img {
+          width: 100%;
+        }
+        h3 {
+          padding: 1.5rem 0;
+        }
+        p {
+          padding: 0.5rem 0;
+        }
+      }
+      .thong-tin-right {
+        width: 25%;
+        // display: flex;
+        // flex-direction: column;
+
+        > div {
+          display: flex;
+          padding-bottom: 2rem;
+          img {
+            width: 30%;
+          }
+          > div {
+            width: 70%;
+            padding-left: 1rem;
+            i {
+              padding: 1rem 0;
+            }
+          }
+        }
+      }
+    }
+    .container-thong-tin-2 {
+      display: flex;
+      justify-content: space-between;
+      .thong-tin-left {
+        width: 70%;
+
+        .thong-tin-container2-content {
+          box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+          margin: 2rem 0;
+          padding-bottom: 2rem;
+          .title-container2 {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+            height: 5rem;
+            display: flex;
+            align-items: center;
+            padding-left: 2rem;
+            position: relative;
+            h2 {
+              &::before {
+                position: absolute;
+                border-left: 3px solid black;
+                left: 0;
+                height: 2rem;
+                content: "";
+              }
+            }
+          }
+          .thong-tin-left-content {
+            display: flex;
+            > div {
+              width: 33.33%;
+              padding: 2rem;
+              img {
+                width: 100%;
+              }
+              h4 {
+                margin: 1rem 0;
+              }
+            }
+          }
+        }
+        button {
+          display: block;
+          margin: auto;
+          margin-top: 2rem;
+          width: 15rem;
+          height: 3rem;
+          background-color: #c61c1d;
+          color: #ffffff;
+          border-radius: 0.3rem;
+          border: none;
+        }
+      }
+      .thong-tin-right {
+        width: 25%;
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+        margin: 2rem 0;
+        // margin-left: 2rem;
+        // display: ;
+        .title-thong-tin-right {
+          border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+          height: 5rem;
+          display: flex;
+          align-items: center;
+          padding-left: 2rem;
+        }
+
+        .container2-right-content {
+          padding-top: 2rem;
+          padding-right: 1rem;
+          > div {
+            display: flex;
+            padding-bottom: 2rem;
+            img {
+              width: 30%;
+              padding-left: 1rem;
+            }
+            > div {
+              width: 70%;
+              padding-left: 1rem;
+              i {
+                padding: 1rem 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .sub-time {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.8);
+    i {
+      display: inline-block;
+      background-image: url(../images/content/thong-tin-them/icon-time.svg);
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 1.5rem;
+      height: 1.5rem;
+      margin: 0 0.5rem 0 2rem;
+    }
+  }
+}
+#full-width {
+  width: 100%;
+  text-align: justify;
+  p {
+    padding: 1rem 0;
+  }
+  img {
+    margin: 1rem 0;
+  }
+}
+
+//// ký gửi
+
+.ky-gui-content {
+  width: 90%;
+  margin: auto;
+
+  table {
+    border-spacing: 0;
+    // border: 1px solid #516170;
+    td {
+      border-top: 1px solid #516170;
+      border-left: 1px solid #516170;
+      &:last-child {
+        border-right: 1px solid #516170;
+      }
+    }
+    tr {
+      &:last-child {
+        td {
+          border-bottom: 1px solid #516170;
+        }
+      }
+    }
+    th {
+      background-color: #343e48;
+      color: #ffffff;
+      height: 4rem;
+    }
+    .cor1 {
+      width: 3%;
+    }
+    .cor2 {
+      width: 10%;
+    }
+    .cor3 {
+      width: 30%;
+    }
+    .cor4 {
+      width: 20%;
+    }
+    .cor5 {
+      width: 15%;
+    }
+    .cor6 {
+      width: 10%;
+    }
+
+    .stt {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      span {
+        width: 2rem;
+        height: 2rem;
+        border: none;
+        border-radius: 50%;
+        background-color: #fa282e;
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0.5rem;
+      }
+    }
+    .images {
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      img {
+        width: 10rem;
+      }
+      .images-sub {
+        display: flex;
+        width: 10rem;
+        justify-content: space-between;
+        button {
+          margin-top: 2rem;
+          width: 4.5rem;
+          height: 2rem;
+          background-color: #c61c1d;
+          color: #ffffff;
+          border: none;
+          border-radius: 0.2rem;
+        }
+      }
+    }
+
+    .don-hang {
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      align-items: center;
+      input {
+        width: 80%;
+        height: 3rem;
+        margin: 1rem 0;
+      }
+    }
+
+    .hang-hoa {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      select {
+        width: 70%;
+        height: 3rem;
+        margin: 1rem 0;
+      }
+    }
+
+    .note {
+      display: block;
+      text-align: center;
+      textarea {
+        width: 90%;
+        height: 10rem;
+      }
+    }
+
+    .thanh-tien {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      > div {
+        width: 80%;
+        height: 3rem;
+        padding-left: 2rem;
+      }
+    }
+  }
+  button {
+    width: 15rem;
+    height: 4rem;
+    border: none;
+    border-radius: 0.3rem;
+    background-color: #c61c1d;
+    color: #ffffff;
+    margin: 2rem auto;
+    display: block;
+  }
+}
+.ky-gui-sub {
+  margin: auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+
+  > div {
+    width: 48%;
+    .ky-gui-sub-title {
+      background-color: #516170;
+      color: #ffffff;
+      height: 4rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #343e48;
+    }
+    .ky-gui-sub-content {
+      padding-top: 2rem;
+      padding-left: 5rem;
+      border: 1px solid #343e48;
+      height: 20rem;
+      > div {
+        padding: 1rem 0;
+      }
+    }
+  }
+}
+#bt-dat-hang {
+  margin: 2rem auto;
+  display: block;
+  width: 15rem;
+  height: 4rem;
+  border: none;
+  border-radius: 0.3rem;
+  background-color: #c61c1d;
+  color: #ffffff;
+}
+
+////đơn hang
+
+.don-hang-container {
+  width: 90%;
+  margin: auto;
+  .thong-bao-don-hang {
+    margin: 2rem 0;
+    .tbdh-title {
+      width: 100%;
+      height: 4rem;
+      background-color: #343e48;
+      color: #ffffff;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      > div {
+        display: flex;
+        align-items: center;
+        span {
+          background-color: #c61c1d;
+          color: #ffffff;
+          margin-left: 1rem;
+          padding: 0.2rem;
+        }
+      }
+    }
+    .tbdh-content {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 10rem;
+      border: 1px solid #516170;
+      > div {
+        width: 14rem;
+        height: 3rem;
+        border: none;
+        input,
+        button,
+        select {
+          width: 100%;
+          height: 100%;
+        }
+        input {
+          text-align: center;
+        }
+      }
+    }
+  }
+  .thong-tin-don-hang {
+    .ttdh-title {
+      background-color: #343e48;
+      color: #ffffff;
+      display: flex;
+      height: 4rem;
+      align-items: center;
+      justify-content: space-between;
+      > div {
+        padding: 0 4rem;
+        display: flex;
+        align-items: center;
+        > div {
+          padding-right: 4rem;
+        }
+      }
+    }
+    .container2 {
+      display: flex;
+      .ttdh-content {
+        width: 66.67%;
+        table {
+          width: 100%;
+          text-align: center;
+          border-spacing: 0;
+          td {
+            border-left: 1px solid #516170;
+            border-bottom: 1px solid #516170;
+            &:last-child {
+              border-right: 1px solid #516170;
+            }
+          }
+          .cor1 {
+            width: 3%;
+          }
+          .cor2 {
+            width: 10%;
+          }
+          .cor3 {
+            width: 20%;
+          }
+          .cor4 {
+            width: 10%;
+          }
+          .cor5 {
+            width: 10%;
+          }
+          .cor6 {
+            width: 10%;
+          }
+
+          .stt {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            span {
+              width: 2rem;
+              height: 2rem;
+              border: none;
+              border-radius: 50%;
+              background-color: #c61c1d;
+              color: #ffffff;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin: 0.5rem;
+            }
+          }
+          .images {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+              padding: 1rem;
+              width: 100%;
+            }
+          }
+          .thong-tin {
+            margin: auto;
+            width: 80%;
+            text-align: left;
+            line-height: 3rem;
+          }
+          .don-gia {
+            span {
+              color: #c61c1d;
+            }
+          }
+        }
+      }
+      .ttdh-sub {
+        width: 33.33%;
+        padding-top: 2rem;
+        height: 30rem;
+        border-right: 1px solid #516170;
+        border-bottom: 1px solid #516170;
+        text-align: center;
+        > div {
+          width: 90%;
+          display: flex;
+          justify-content: space-between;
+          margin: 2rem auto;
+        }
+      }
+    }
+  }
+}
+
+//Kiện hàng
+
+.kien-hang-container {
+  width: 90%;
+  margin: auto;
+  .trang-thai-kh {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    padding: 3rem 0;
+    border: 1px solid #343e48;
+    .kh-title {
+      display: flex;
+      justify-items: center;
+      div {
+        line-height: 2.5rem;
+        padding: 0 1.5rem;
+        &:nth-child(1) {
+          text-align: right;
+        }
+        &:last-child {
+          text-align: left;
+          p {
+            &:last-child {
+              color: #fa282e;
+            }
+          }
+        }
+      }
+    }
+    .trang-thai {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      height: 4rem;
+      position: relative;
+      margin: 2rem auto;
+      &::after {
+        position: absolute;
+        content: "";
+        border-top: 0.6rem solid #059d02;
+        width: 79%;
+        top: 1.7rem;
+        z-index: -1;
+      }
+      div {
+        border: 0.3rem solid #059d02;
+        background-color: #06bd02;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .hoan-thanh {
+          display: inline-block;
+          width: 2rem;
+          height: 2rem;
+          background-image: url(../images/content/kien-hang/check.svg);
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+    .ten-trang-thai {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      > div {
+        width: 20rem;
+        text-align: center;
+        // padding-top: 2rem;
+        line-height: 2rem;
+        .time {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+  .thong-tin-kh {
+    width: 100%;
+    margin: auto;
+    padding: 2rem 0;
+    .nha-cung-cap {
+      width: 100%;
+      padding: 3rem;
+      height: 4rem;
+      background-color: #343e48;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+    .tb-content {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 2rem;
+      table {
+        width: 65%;
+        border-spacing: 0;
+        th {
+          background-color: #343e48;
+          height: 4rem;
+          color: #ffffff;
+          &:nth-child(1) {
+            width: 3%;
+          }
+          &:nth-child(2) {
+            width: 15%;
+          }
+          &:nth-child(3) {
+            width: 15%;
+          }
+          &:nth-child(4) {
+            width: 15%;
+          }
+          &:nth-child(5) {
+            width: 15%;
+          }
+          &:nth-child(6) {
+            width: 15%;
+          }
+        }
+        td {
+          height: 5rem;
+          border-left: 1px solid #516170;
+          border-bottom: 1px solid #516170;
+          &:nth-child(1) {
+            > div {
+              // width: 100%;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              span {
+                width: 2.5rem;
+                height: 2.5rem;
+                border-radius: 50%;
+                border: none;
+                background-color: #fa282e;
+                color: #ffffff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0.5rem;
+              }
+            }
+          }
+          &:nth-child(2) {
+            > div {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              width: 100%;
+              padding: 1rem;
+              line-height: 2rem;
+              color: rgba(0, 0, 0, 0.5);
+              img {
+                width: 80%;
+                padding-bottom: 1rem;
+              }
+            }
+          }
+          &:nth-child(3) {
+            > div {
+              text-align: center;
+              span {
+                color: #fa282e;
+              }
+            }
+          }
+          &:nth-child(4) {
+            > div {
+              text-align: center;
+            }
+          }
+          &:nth-child(5) {
+            text-align: center;
+          }
+          &:nth-child(6) {
+            border-right: 1px solid #516170;
+            > div {
+              text-align: center;
+              color: #fa282e;
+            }
+          }
+        }
+      }
+      .tb-sub {
+        width: 30%;
+        padding: 4rem;
+        border: 1px solid #516170;
+        > div {
+          display: flex;
+          justify-content: space-between;
+          line-height: 2.5rem;
+          padding: 1.5rem 0;
+          span {
+            color: #fa282e;
+          }
+        }
+      }
+    }
+  }
+  .chi-tiet-kh {
+    width: 100%;
+    .tb-title {
+      height: 4rem;
+      background-color: #343e48;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 3rem;
+    }
+    table {
+      border-spacing: 0;
+      td {
+        height: 4rem;
+        background-color: #ebebeb;
+        border-bottom: 1px solid #ffffff;
+        &:nth-child(1) {
+          width: 5%;
+          padding-left: 2rem;
+        }
+        &:nth-child(2) {
+          width: 10%;
+        }
+        &:nth-child(3) {
+          width: 5%;
+          padding-left: 2rem;
+        }
+        &:nth-child(4) {
+          width: 10%;
+        }
+      }
+    }
+    .bt-xem-kien-hang {
+      margin: 4rem auto;
+      text-align: center;
+      button {
+        width: 12rem;
+        height: 4rem;
+        border-radius: 0.3rem;
+        border: none;
+        background-color: #c61c1d;
+        color: #ffffff;
+      }
+    }
+    .sub-tt {
+      width: 100%;
+      .title-sub {
+        margin: 2rem 0;
+        padding-left: 3rem;
+      }
+      .tb-sub {
+        table {
+          width: 100%;
+          text-align: center;
+          th {
+            background-color: #343e48;
+            color: #ffffff;
+            height: 4rem;
+            &:nth-child(1) {
+              width: 3%;
+            }
+            &:nth-child(2) {
+              width: 15%;
+            }
+            &:nth-child(3) {
+              width: 20%;
+            }
+            &:nth-child(4) {
+              width: 20%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// vi dien tu
+
+.wd-vi-dien-tu {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 1;
+  .nen {
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.4);
+  }
+  .bang-thong-bao {
+    position: fixed;
+    top: calc(50% - 10rem);
+    left: calc(50% - 30rem);
+    width: 60rem;
+    height: 20rem;
+    background-color: #ffffff;
+    z-index: 2;
+    padding: 1rem 5rem;
+    > div {
+      display: flex;
+      align-items: center;
+      margin-top: 2rem;
+      label {
+        width: 15rem;
+        margin-right: 3rem;
+      }
+      select {
+        width: 20rem;
+        height: 3rem;
+      }
+      input {
+        width: 30rem;
+        height: 3rem;
+      }
+    }
+    p {
+      margin: 1rem 0;
+    }
+    button {
+      display: block;
+      margin: auto;
+      text-align: center;
+      width: 8rem;
+      height: 3rem;
+      border: none;
+      border-radius: 0.3rem;
+      background-color: #c61c1d;
+      color: #ffffff;
+    }
+    #dong {
+      position: fixed;
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+      background-color: #fa282e;
+      color: #ffffff;
+      border: 2px solid #ffffff;
+      top: calc(50% - 10rem - 1.5rem);
+      right: calc(50% - 30rem - 1rem);
+    }
+  }
+}
+.cai-dat-conteiner {
+  width: 90%;
+  margin: auto;
+  .cai-dat-title {
+    width: 100%;
+    height: 4rem;
+    padding: 0 3rem;
+    background-color: #343e48;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem auto;
+  }
+  .cai-dat-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    .content-let {
+      width: 65%;
+      .tnb-san-pham {
+        table {
+          width: 100%;
+          border-spacing: 0;
+          th {
+            background-color: #343e48;
+            color: #ffffff;
+            height: 4rem;
+          }
+          td {
+            border-left: 1px solid #516170;
+            border-bottom: 1px solid #516170;
+            &:nth-child(1) {
+              width: 2%;
+              display: flex;
+              flex-direction: column;
+            }
+            &:nth-child(2) {
+              width: 10%;
+            }
+            &:nth-child(3) {
+              width: 10%;
+            }
+            &:nth-child(4) {
+              width: 10%;
+            }
+            &:nth-child(5) {
+              width: 10%;
+            }
+            &:nth-child(6) {
+              width: 10%;
+              border-right: 1px solid #516170;
+            }
+          }
+        }
+      }
+    }
+    .conten-right {
+      width: 30%;
+    }
+  }
+  .bnt {
+  }
 }
